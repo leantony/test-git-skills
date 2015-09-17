@@ -1,45 +1,45 @@
-// function buildFunctions(){
+function buildFunctions(){
 
-// 	var arr = [];
+	var arr = [];
 
-// 	for (var i = 0; i < 3; i++) {
-// 		arr.push((function(j){
-// 			return function() {console.log(j)};
-// 		})(i))
-// 	};
+	for (var i = 0; i < 3; i++) {
+		arr.push((function(j){
+			return function() {console.log(j)};
+		})(i))
+	};
 
-// 	return arr;
-// }
+	return arr;
+}
 
-// var fs = buildFunctions();
+var fs = buildFunctions();
 
-// fs[0]();
-// fs[1]();
-// fs[2]();
+fs[0]();
+fs[1]();
+fs[2]();
 
 
-// function makeGreeting(language){
+function makeGreeting(language){
 
-// 	return function(firstname, lastname) {
+	return function(firstname, lastname) {
 		
-// 		if (language === 'en') {
+		if (language === 'en') {
 
-// 			console.log('Hello ' + firstname + ' ' + lastname);
-// 		}
+			console.log('Hello ' + firstname + ' ' + lastname);
+		}
 
-// 		if (language === 'es') {
+		if (language === 'es') {
 
-// 			console.log('Hola ' + firstname + ' ' + lastname);
-// 		}
-// 	}
-// }
+			console.log('Hola ' + firstname + ' ' + lastname);
+		}
+	}
+}
 
-// var greetEnglish = makeGreeting('en');
+var greetEnglish = makeGreeting('en');
 
-// var greetSpanish = makeGreeting('es');
+var greetSpanish = makeGreeting('es');
 
-// greetEnglish('antony', 'chacha');
-// greetSpanish('antony', 'chacha');
+greetEnglish('antony', 'chacha');
+greetSpanish('antony', 'chacha');
 
 
 function mapForEach(arr, fn){
