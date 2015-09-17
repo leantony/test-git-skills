@@ -1,3 +1,4 @@
+//This is a comment.
 function buildFunctions(){
 
 	var arr = [];
